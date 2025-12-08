@@ -1,3 +1,2 @@
 # Algorithmic-Trading-Competition
-Trading bot written for the Imperial College London AlgoSoc Course Trading Competition in timed conditions.
-To run, download, open submission_notebook and run all. To change between test and train data open backtest and edit data variable.
+Trading bot written for the Imperial College London AlgoSoc Course Trading Competition in timed conditions. Submitted as coursework. To run, download, open submission_notebook and run all. To change between test and train data open backtest and edit data variable. It is a stateful adaptive algorithm which reacts to short term signals using exponential moving averages. I post buy and sell orders at the best price from the previous tick, which captures spread when the back tester classifies the order as perfect market making. It also changes its order size based on confidence and inventory. It randomly changes to avoid local minimums.
